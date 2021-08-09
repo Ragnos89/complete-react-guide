@@ -1,28 +1,28 @@
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 
-const Expenses = (props) => {
+const Expenses = (date, title, amount) => {
   return (
     <div className="expenses">
       <ExpenseItem
-        title={props.items[0].title}
-        amount={props.items[0].amount}
-        date={props.items[0].date}
+        title={title[0]}
+        amount={amount[0]}
+        date={date[0]}
       ></ExpenseItem>
       <ExpenseItem
-        title={props.items[1].title}
-        amount={props.items[1].amount}
-        date={props.items[1].date}
+        title={title[1]}
+        amount={amount[1]}
+        date={date[1]}
       ></ExpenseItem>
       <ExpenseItem
-        title={props.items[2].title}
-        amount={props.items[2].amount}
-        date={props.items[2].date}
+        title={title[2]}
+        amount={amount[2]}
+        date={date[2]}
       ></ExpenseItem>
       <ExpenseItem
-        title={props.items[3].title}
-        amount={props.items[3].amount}
-        date={props.items[3].date}
+        title={title[3]}
+        amount={amount[3]}
+        date={date[3]}
       ></ExpenseItem>
     </div>
   );

@@ -25,7 +25,11 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expenses items={expenses} />
+      <Expenses
+        date={expenses.map((a) => a.date)}
+        title={expenses.map((b) => b.title)}
+        amount={expenses.map((c) => c.amount)}
+      />
     </div>
   );
 }
