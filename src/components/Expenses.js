@@ -1,7 +1,7 @@
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem";
 
-const Expenses = (date, title, amount) => {
+const Expenses = ({ title, amount, date }) => {
   return (
     <div className="expenses">
       <ExpenseItem
