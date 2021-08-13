@@ -6,6 +6,7 @@ import Card from "../UI/Card.js";
 
 const ExpenseItem = ({ title, amount, date }) => {
   const [title_2, setTitle_2] = useState(title);
+  console.log("Expense item evaluated!");
 
   const clickHandler = () => {
     setTitle_2("Updated!!!!");
