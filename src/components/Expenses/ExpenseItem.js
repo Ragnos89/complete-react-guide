@@ -6,13 +6,15 @@ import Card from "../UI/Card.js";
 
 const ExpenseItem = ({ title, amount, date }) => {
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={date} title={title} amopunt={amount} />
-      <div className="expense-item__description">
-        <h2>{title}</h2>
-        <div className="expense-item__price">${amount}</div>
-      </div>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={date} title={title} amopunt={amount} />
+        <div className="expense-item__description">
+          <h2>{title}</h2>
+          <div className="expense-item__price">${amount}</div>
+        </div>
+      </Card>
+    </li>
   );
 };
 
